@@ -2,21 +2,22 @@
   "name": "zuendorf.me",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "harp server --port $PORT"
-  },
-  "dependencies": {
-    "harp": "*"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LennardZuendorf/zuendorf.me.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LennardZuendorf/zuendorf.me/issues"
   },
-  "homepage": "https://github.com/LennardZuendorf/zuendorf.me#readme"
+  "homepage": "https://github.com/LennardZuendorf/zuendorf.me#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
