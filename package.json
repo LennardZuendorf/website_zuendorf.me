@@ -1,0 +1,22 @@
+{
+  "name": "zuendorf.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LennardZuendorf/zuendorf.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LennardZuendorf/zuendorf.me/issues"
+  },
+  "homepage": "https://github.com/LennardZuendorf/zuendorf.me#readme"
+}
