@@ -23,7 +23,7 @@
     --dark-white: rgba(253, 253, 253, 1);
     --light-grey: rgba(211, 211, 211, 1);
 
-    /* website colors */
+    /* standart website colors */
     --background-color: var(--light-black);
     --text-color: var(--all-white);
 
@@ -49,4 +49,10 @@ body{
 
 .navbar{
     background-color: var(--background-color) !important;
+}
+
+.normal-style{
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+
 }
