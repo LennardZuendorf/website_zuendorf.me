@@ -2,12 +2,12 @@ function toggleColor() {
 
     //changing color mode
     const element = document.body;
-    element.classList.toggle("light-mode");
+    element.classList.toggle("dark-mode");
 
     //saving color mode
-    if (element.classList.contains("light-mode") === true){
-        localStorage.setItem("colorMode", "light");
-    }else localStorage.setItem("colorMode", "dark");
+    if (element.classList.contains("dark-mode") === true){
+        localStorage.setItem("zuendorf.me-colorMode", "dark");
+    }else localStorage.setItem("zuendorf.me-colorMode", "light");
 
     //changing color mode icon and color of the icon
     const x = document.getElementById("colorModeIcon");
@@ -15,21 +15,20 @@ function toggleColor() {
     const x3 = document.getElementById("navbar-icon");
     const x4 = document.getElementById("navbar");
 
-    if(localStorage.getItem("colorMode")==="light"){
-        x.classList.remove("bi-brightness-high-fill");
-        x.classList.add("bi-moon-fill");
-        x2.setAttribute('href', './img/logo_icon_light.svg');
-        x3.setAttribute('src', './img/logo_dark_regular.svg');
-        x4.classList.remove("navbar-dark");
-        x4.classList.add("navbar-light");
-
-    }else{
+    if(localStorage.getItem("colorMode")==="dark"){
         x.classList.remove("bi-moon-fill");
         x.classList.add("bi-brightness-high-fill");
         x2.setAttribute('href', './img/logo_icon_dark.svg');
-        x3.setAttribute('src', './img/logo_light_regular.svg');
+        x3.setAttribute('src', './img/logo_light_bold.svg');
         x4.classList.remove("navbar-light");
         x4.classList.add("navbar-dark");
+    }else{
+        x.classList.remove("bi-brightness-high-fill");
+        x.classList.add("bi-moon-fill");
+        x2.setAttribute('href', './img/logo_icon_light.svg');
+        x3.setAttribute('src', './img/logo_dark_bold.svg');
+        x4.classList.remove("navbar-dark");
+        x4.classList.add("navbar-light");
     }
 }
 
