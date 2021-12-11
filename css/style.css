@@ -78,4 +78,6 @@ body{
 
 .content-box{
     padding: 30px !important;
+    height: 100%;
+    width: 100%;
 }
