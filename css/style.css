@@ -9,44 +9,74 @@
     --font-family: "Roboto";
 
     /* basic colors */
-    --all-black: rgba(0, 0, 0, 1);
-    --all-white: rgba(255, 255, 255, 1);
+    --black: rgba(0, 0, 0, 1);
+    --grey-dm: rgba(86, 86, 86, 1);
+
+    --white: rgba(255, 255, 255, 1);
+    --grey-lm: rgba(229, 229, 229, 1);
+
+    /* darkmode accent colors */
+    --light-black: rgba(37, 37, 37, 1);
+    --dark-grey-dm: rgba(69, 69, 69, 1);
+
+    /* lightmode accent colors */
+    --dark-white: rgba(244, 244, 244, 1);
+    --light-grey-lm: rgba(211, 211, 211, 1);
 
 
-    /* darkmode colors */
-    --light-black: rgba(34, 34, 34, 1);
-    --dark-black: rgba(37, 37, 37, 1);
-    --dark-grey: rgba(69, 69, 69, 1);
-
-    /* lightmode colors */
-    --light-white: rgba(253, 253, 253, 1);
-    --dark-white: rgba(253, 253, 253, 1);
-    --light-grey: rgba(211, 211, 211, 1);
-
-    /* website colors */
+    /* darkmode website colors */
     --background-color: var(--light-black);
-    --text-color: var(--all-white);
+    --text-color: var(--white);
 
-    --accent-color1: var(--dark-black);
-    --accent-color2: var(--dark-grey);
+    --main-color: var(--black);
+    --main-color-ac: var(--light-black);
+    --grey-color: var(--grey-dm);
+    --grey-color-ac: var(--dark-grey-dm);
 
 }
 
 .light-mode{
-    /* website colors */
-    --background-color: var(--light-white) !important;
-    --text-color: var(--all-black) !important;
 
-    --accent-color1: var(--dark-white) !important;
-    --accent-color2: var(--light-grey) !important;
+    /* lightmode website colors */
+    --background-color: var(--dark-white);
+    --text-color: var(--black);
+
+    --main-color: var(--white);
+    --main-color-ac: var(--dark-white);
+    --grey-color: var(--grey-lm);
+    --grey-color-ac: var(--light-grey-lm);
 }
 
 body{
-    height: 100%;
-    margin: 30px;
     background-color: var(--background-color) !important;
 }
 
 .navbar{
     background-color: var(--background-color) !important;
+    padding-top: 30px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.normal-style{
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+
+}
+
+.active{
+    font-weight: bold !important;
+}
+
+.border-top{
+    border-color: var(--text-color) !important;
+}
+.border-bottom{
+    border-color: var(--text-color) !important;
+}
+
+.content-box{
+    padding: 30px !important;
+    height: 100%;
+    width: 100%;
 }
