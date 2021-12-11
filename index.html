@@ -22,9 +22,9 @@
 
 </head>
 
-<body onload="startupColor(); typeWriter();">
+<body onload="startupColor()">
 
-    <!--navbar-->
+<!--navbar-->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand">
@@ -67,7 +67,8 @@
     </nav>
 <!--navbar-->
 
-    <!--content-->
+
+<!--content-->
 
     <div class="container-fluid content-box d-flex align-items-center justify-content-center">
         <div class="row" style="height: 100%; padding-top: 20%">
@@ -81,6 +82,30 @@
             </div>
 
         </div>
+
+        <!--cookie banner-->
+        <!--found at: https://www.codeply.com/p/azCmarhM9X-->
+
+        <div class="fixed-bottom p-4">
+            <div class="toast bg-dark text-white w-100 mw-100" role="alert" data-autohide="false">
+                <div class="toast-body p-4 d-flex flex-column">
+                    <h4>Cookie Warning</h4>
+                    <p>
+                        This website stores data such as cookies only to enable site functionality (i.e. color mode). By using this website, you automatically accept that we use cookies.
+                    </p>
+                    <div class="ml-auto">
+                        <button type="button" class="btn btn-outline-light mr-3" id="btnDeny">
+                            Deny
+                        </button>
+                        <button type="button" class="btn btn-light" id="btnAccept">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cookie banner-->
+
     </div>
 
     <!--content-->
@@ -113,5 +138,6 @@
 
 
     <!-- importing internal js files -->
-    <script src="./js/script.js" type="text/javascript" defer></script>
+    <script src="js/colorMode.js" type="text/javascript" defer></script>
+    <script src="js/cookieMonster.js" type="text/javascript" defer></script>
 </html>
