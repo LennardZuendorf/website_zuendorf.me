@@ -18,6 +18,7 @@
     <!-- importing external js files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/fontawesome.min.js"></script>
+    <script src="https://kit.fontawesome.com/23f0d5eaa8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -84,33 +85,38 @@
 
     </div>
 
-    <!--cookie banner, by Kolappan Nathan-->
-    <!--found at: https://github.com/kolappannathan/bootstrap-cookie-banner-->
+        <!--cookie banner, by Kolappan Nathan-->
+        <!--found at: https://github.com/kolappannathan/bootstrap-cookie-banner-->
 
-    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0 fixed-bottom" role="alert">
-    🍪 This website uses cookies only to ensure the technical functionality of the website!
-    <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-    <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
-        I Got It
-    </button>
-    </div>
-    <!--cookie banner-->
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+            <div class="alert-heading" style="font-size: var(--font-size-m) !important;">
+                🍪 We use cookies.
+            </div>
+            <div style="font-size: var(--font-size-s) !important;">
+                But we only do to keep technical functionalities working, like the color mode, working!
+                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+                    got it
+                </button>
+            </div>
+
+        </div>
+        <!--cookie banner-->
 
     </div>
     <!--content-->
 
     <!--footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 fixed-bottom border-top">
-    <p class="col-md-1"></p>
-    <p class="col-md-5 mb-0 text-muted">© 2021 Lennard Zündorf</p>
+        <p class="col-md-1"></p>
+        <p class="col-md-5 mb-0 text-muted">© 2021 Lennard Zündorf</p>
 
-    <ul class="nav col-md-5 justify-content-end">
-    <li class="nav-item"><a href="legal.html" class="nav-link px-2 text-muted">legal</a></li>
-    <li class="nav-item"><a href="mailto:lennard@zuendorf.me" class="nav-link px-2 text-muted"><i class="bi bi-envelope-fill"></i></a></li>
-    <li class="nav-item"><a href="https://github.com/LennardZuendorf" class="nav-link px-2 text-muted"><i class="bi bi-github"></i></a></li>
-    <li class="nav-item"><a href="https://www.linkedin.com/in/lennard-zuendorf/" class="nav-link px-2 text-muted"><i class="bi bi-linkedin"></i></a></li>
-    </ul>
-    <p class="col-md-1"></p>
+        <ul class="nav col-md-5 justify-content-end">
+            <li class="nav-item"><a href="legal.html" class="nav-link px-2 text-muted">legal</a></li>
+            <li class="nav-item"><a href="mailto:lennard@zuendorf.me" class="nav-link px-2 text-muted"><i class="bi bi-envelope-fill"></i></a></li>
+            <li class="nav-item"><a href="https://github.com/LennardZuendorf" class="nav-link px-2 text-muted"><i class="bi bi-github"></i></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/lennard-zuendorf/" class="nav-link px-2 text-muted"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+        <p class="col-md-1"></p>
     </footer>
     <!--footer-->
 
