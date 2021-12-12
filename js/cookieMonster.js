@@ -19,7 +19,7 @@ function initializeCookieBanner(){
     let isCookieAccepted = localStorage.getItem("z.me_cookieMonster");
     if(isCookieAccepted === null)
     {
-        localStorage.setItem("cb_isCookieAccepted", "no");
+        localStorage.setItem("z.me_cookieMonster", "no");
         showCookieBanner();
     }
     if(isCookieAccepted === "no"){
