@@ -33,10 +33,9 @@ function toggleColor() {
 }
 
 function startupColor() {
-    if (localStorage.getItem("zuendorf.me-colorMode") === "light") {
+    if (localStorage.getItem("z.me-colorMode") === "light") {
         toggleColor();
     }
 }
-
 
 window.onload = startupColor();
