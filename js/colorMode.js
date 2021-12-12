@@ -9,6 +9,12 @@ function toggleColor() {
         localStorage.setItem("z.me-colorMode", "dark");
     }else localStorage.setItem("z.me-colorMode", "light");
 
+    classChanges()
+
+}
+
+function classChanges(){
+
     //changing color mode icon and color of the icon
     const x = document.getElementById("colorModeIcon");
     const x2 = document.getElementById("site-icon");
