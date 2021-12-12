@@ -6,8 +6,8 @@ function toggleColor() {
 
     //saving color mode
     if (element.classList.contains("dark-mode") === true){
-        localStorage.setItem("zuendorf.me-colorMode", "dark");
-    }else localStorage.setItem("zuendorf.me-colorMode", "light");
+        localStorage.setItem("z.me-colorMode", "dark");
+    }else localStorage.setItem("z.me-colorMode", "light");
 
     //changing color mode icon and color of the icon
     const x = document.getElementById("colorModeIcon");
@@ -15,7 +15,7 @@ function toggleColor() {
     const x3 = document.getElementById("navbar-icon");
     const x4 = document.getElementById("navbar");
 
-    if(localStorage.getItem("colorMode")==="dark"){
+    if(localStorage.getItem("z.me-colorMode")==="dark"){
         x.classList.remove("bi-moon-fill");
         x.classList.add("bi-brightness-high-fill");
         x2.setAttribute('href', './img/logo_icon_dark.svg');
@@ -32,3 +32,11 @@ function toggleColor() {
     }
 }
 
+function startupColor() {
+    if (localStorage.getItem("zuendorf.me-colorMode") === "light") {
+        toggleColor();
+    }
+}
+
+
+window.onload = startupColor();
