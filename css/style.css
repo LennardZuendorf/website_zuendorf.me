@@ -79,19 +79,26 @@ body{
 #cb-cookie-banner {
     color: var(--txt-color) !important;
     background-color: var(--bg-color) !important;
-    position: fixed;
-    bottom: 0;
+    opacity: 100% !important;
     left: 0;
-    width: 100%;
-    z-index: 999;
-    border-radius: 0;
-    display: none;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10000;
+    width: 95%;
+    border-color: var(--grey-ac) !important;
+}
+
+@media screen and (min-width: 480px) {
+    #cb-cookie-banner  {
+        width: 60%;
+    }
 }
 
 .btn-primary{
     color: var(--txt-color) !important; ;
     background-color: var(--grey-ac) !important;
-    border-color: var(--grey-ac) !important;
+    border-color: var(--bg-color) !important;
 }
 
 .bi-envelope-fill{
