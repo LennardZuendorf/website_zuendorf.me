@@ -1,3 +1,10 @@
+function startupColor(){
+    if (window.localStorage.getItem("z.me-colorMode") === "dark"){
+        console.log("checking for color setting - triggered dark mode")
+        toggleColor();
+    }else console.log("checking for color setting - kept light mode")
+}
+
 function toggleColor() {
 
     //changing color mode
@@ -6,11 +13,14 @@ function toggleColor() {
 
     //saving color mode
     if (element.classList.contains("dark-mode") === true){
-        localStorage.setItem("z.me-colorMode", "dark");
-    }else localStorage.setItem("z.me-colorMode", "light");
+        window.localStorage.setItem("z.me-colorMode", "dark");
+        console.log("dark mode activated - saved in local storage");
+    }else {
+        window.localStorage.setItem("z.me-colorMode", "light");
+        console.log("light mode activated - saved in local storage");
+    }
 
     classChanges()
-
 }
 
 function classChanges(){
@@ -21,27 +31,25 @@ function classChanges(){
     const x3 = document.getElementById("navbar-icon");
     const x4 = document.getElementById("navbar");
 
-    if(localStorage.getItem("z.me-colorMode")==="dark"){
+    if(window.localStorage.getItem("z.me-colorMode")==="dark"){
         x.classList.remove("bi-moon-fill");
         x.classList.add("bi-brightness-high-fill");
+
         x2.setAttribute('href', './img/logo_icon_dark.svg');
         x3.setAttribute('src', './img/logo_light_bold.svg');
+
         x4.classList.remove("navbar-light");
         x4.classList.add("navbar-dark");
     }else{
         x.classList.remove("bi-brightness-high-fill");
         x.classList.add("bi-moon-fill");
+
         x2.setAttribute('href', './img/logo_icon_light.svg');
         x3.setAttribute('src', './img/logo_dark_bold.svg');
+
         x4.classList.remove("navbar-dark");
         x4.classList.add("navbar-light");
     }
 }
 
-function startupColor() {
-    if (localStorage.getItem("z.me-colorMode") === "light") {
-        toggleColor();
-    }
-}
 
-window.onload = startupColor();

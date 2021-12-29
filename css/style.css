@@ -76,7 +76,7 @@ body{
     width: 100%;
 }
 
-#cb-cookie-banner {
+#cookie-banner {
     color: var(--txt-color) !important;
     background-color: var(--bg-color) !important;
     opacity: 100% !important;
@@ -90,7 +90,7 @@ body{
 }
 
 @media screen and (min-width: 480px) {
-    #cb-cookie-banner  {
+    #cookie-banner  {
         width: 60%;
     }
 }
@@ -107,4 +107,8 @@ body{
 
 .color-icon{
     color: var(--red-ac) !important;
+}
+
+.hide{
+    display: none;
 }

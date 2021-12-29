@@ -3,30 +3,34 @@
 /* Javascript to show and hide cookie banner using localstorage */
 /* Shows the Cookie banner */
 function showCookieBanner(){
-    let cookieBanner = document.getElementById("cb-cookie-banner");
-    cookieBanner.style.display = "block";
+    let cookieBanner = document.getElementById("cookie-banner");
+    cookieBanner.classList.remove("hide");
 }
 
 /* Hides the Cookie banner and saves the value to localstorage */
 function hideCookieBanner(){
-    localStorage.setItem("z.me_cookieMonster", "yes");
-    let cookieBanner = document.getElementById("cb-cookie-banner");
-    cookieBanner.style.display = "none";
+    window.localStorage.setItem("z.me_cookieCheck", "yes");
+    let cookieBanner = document.getElementById("cookie-banner");
+    cookieBanner.classList.add("hide");
+
+    console.log("hiding cookie banner in the future")
+    console.log(window.localStorage.getItem("z.me_cookieCheck"))
 }
 
 /* Checks the localstorage and shows Cookie banner based on it. */
 function initializeCookieBanner(){
-    let isCookieAccepted = localStorage.getItem("z.me_cookieMonster");
-    if(isCookieAccepted === null)
-    {
-        localStorage.setItem("z.me_cookieMonster", "no");
-        showCookieBanner();
-    }
-    if(isCookieAccepted === "no"){
-        showCookieBanner();
-    }
-}
 
-// Assigning values to window object
-window.onload = initializeCookieBanner();
-window.cb_hideCookieBanner = hideCookieBanner;
+    let isCookieAccepted = window.localStorage.getItem("z.me_cookieCheck");
+
+    if(isCookieAccepted === "no"){
+        console.log("cookie banner not accepted - showing banner")
+        showCookieBanner();
+
+    } else if(isCookieAccepted === null) {
+        window.localStorage.setItem("z.me_cookieCheck", "no");
+        console.log("cookie banner not accepted - showing banner")
+        showCookieBanner();
+
+    }else console.log("cookie banner accepted - not showing banner")
+
+}
