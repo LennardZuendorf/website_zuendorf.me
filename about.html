@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/23f0d5eaa8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="startupColor(); initializeCookieBanner()">
 
     <!--navbar-->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light border-bottom">
@@ -89,13 +89,13 @@
 
     <!--cookie banner, by Kolappan Nathan-->
     <!--found at: https://github.com/kolappannathan/bootstrap-cookie-banner-->
-    <div id="cb-cookie-banner" class="alert alert-dark text-center fixed-bottom" role="alert">
+    <div id="cookie-banner" class="alert alert-dark text-center fixed-bottom hide" role="alert">
         <div class="alert-heading" style="font-size: var(--font-size-m) !important;">
             <i class="fas fa-cookie"></i> I use cookies.
         </div>
         <div style="font-size: var(--font-size-s) !important;">
             But I only do to keep technical functionalities, i.e. the color mode, working! <a href="legal.html" style="color: var(--red-ac)"> learn more</a>
-            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">got it</button>
+            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="hideCookieBanner()">got it</button>
         </div>
     </div>
     <!--cookie banner-->
