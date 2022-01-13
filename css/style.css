@@ -1,12 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,500,900");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-
     --font-size-xs: 11px;
     --font-size-s: 15px;
     --font-size-m: 20px;
     --font-size-l: 40px;
-    --font-family: "Roboto";
+    --roboto-normal: "Roboto";
+    --roboto-mono: "Roboto Mono";
+
+    font-family: var(--roboto-normal);
+
+    --roboto-light: 300;
+    --roboto-medium: 500;
+    --roboto-bold: 700;
+    --roboto-black: 900;
 
     /* basic colors */
     --black: rgba(0, 0, 0, 1);
@@ -22,7 +29,7 @@
     /* red accent color */
     --indian-red: rgba(255,85,84,1);
 
-    /* lightmode website colors */
+    /* light mode website colors */
     --bg-color: var(--cultured-white);
     --txt-color: var(--black);
     --main-color: var(--white);
@@ -33,7 +40,7 @@
 
 .dark-mode {
 
-    /* darkmode website colors */
+    /* dark mode website colors */
     --bg-color: var(--erie-black);
     --txt-color: var(--white);
     --main-color: var(--black);
@@ -44,19 +51,19 @@
 
 body{
     background-color: var(--bg-color) !important;
+    font-weight: var(--roboto-medium); !important;
 }
 
 .navbar{
     background-color: var(--bg-color) !important;
-    padding-top: 30px !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-top: 1.875em!important;
+    padding-left: 1.875em !important;
+    padding-right: 1.875em !important;
 }
 
 .normal-style{
     background-color: var(--bg-color) !important;
     color: var(--txt-color) !important;
-
 }
 
 .active{
@@ -71,7 +78,7 @@ body{
 }
 
 .content-box{
-    padding: 30px !important;
+    padding: 1.875em !important;
     height: 100%;
     width: 100%;
 }
@@ -101,7 +108,7 @@ body{
     border-color: var(--bg-color) !important;
 }
 
-.bi-envelope-fill{
+.bi-envelope{
     color: var(--red-ac) !important;
 }
 
