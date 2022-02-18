@@ -1,0 +1,91 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "description": "module API",
+    "title": "module API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://module"
+    }
+  ],
+  "paths": {
+    "/test/private": {
+      "get": {
+        "operationId": "privateEndpoint",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "GET test/private",
+        "x-accepts": "application/json"
+      }
+    },
+    "/test/public": {
+      "get": {
+        "operationId": "publicEndpoint",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "GET test/public",
+        "x-accepts": "application/json"
+      }
+    },
+    "/user/delete/{id}": {
+      "delete": {
+        "operationId": "deleteLocation",
+        "parameters": [
+          {
+            "explode": false,
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "format": "int64",
+              "type": "number"
+            },
+            "style": "simple"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "DELETE user/delete/{id}",
+        "x-accepts": "application/json"
+      }
+    },
+    "/user/get": {
+      "get": {
+        "operationId": "getLocation",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "GET user/get",
+        "x-accepts": "application/json"
+      }
+    },
+    "/user/post": {
+      "post": {
+        "operationId": "postLocation",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "POST user/post",
+        "x-accepts": "application/json"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
