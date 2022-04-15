@@ -115,6 +115,15 @@ body{
     }
 }
 
+.content-box-legal{
+    padding: 2em !important;
+    padding-top: 5em !important;
+    padding-bottom: 6.5em !important;
+    height: 100%;
+    width: 100%;
+    text-align: left !important;
+}
+
 #cookie-banner {
     color: var(--txt-color) !important;
     background-color: var(--bg-color) !important;

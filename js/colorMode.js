@@ -34,8 +34,8 @@ function classChanges(){
         colorModeIcon.classList.remove("bi-moon-fill");
         colorModeIcon.classList.add("bi-brightness-high-fill");
 
-        siteIcon.setAttribute('href', './img/logo_light_bold.svg');
-        navIcon.setAttribute('src', './img/logo_light_bold.svg');
+        siteIcon.setAttribute('href', './img/svg/logo_light_bold.svg');
+        navIcon.setAttribute('src', './img/svg/logo_light_bold.svg');
 
         navbar.classList.remove("navbar-light");
         navbar.classList.add("navbar-dark");
@@ -43,8 +43,8 @@ function classChanges(){
         colorModeIcon.classList.remove("bi-brightness-high-fill");
         colorModeIcon.classList.add("bi-moon-fill");
 
-        siteIcon.setAttribute('href', './img/logo_dark_bold.svg');
-        navIcon.setAttribute('src', './img/logo_dark_bold.svg');
+        siteIcon.setAttribute('href', './img/svg/logo_dark_bold.svg');
+        navIcon.setAttribute('src', './img/svg/logo_dark_bold.svg');
 
         navbar.classList.remove("navbar-dark");
         navbar.classList.add("navbar-light");
