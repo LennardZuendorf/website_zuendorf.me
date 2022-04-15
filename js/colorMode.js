@@ -19,36 +19,35 @@ function toggleColor() {
         window.localStorage.setItem("z.me-colorMode", "light");
         console.log("light mode activated - saved in local storage");
     }
-
     classChanges()
 }
 
 function classChanges(){
 
     //changing color mode icon and color of the icon
-    const x = document.getElementById("colorModeIcon");
-    const x2 = document.getElementById("site-icon");
-    const x3 = document.getElementById("navbar-icon");
-    const x4 = document.getElementById("navbar");
+    const colorModeIcon = document.getElementById("colorModeIcon");
+    const siteIcon = document.getElementById("site-icon");
+    const navIcon = document.getElementById("navbar-icon");
+    const navbar = document.getElementById("navbar");
 
     if(window.localStorage.getItem("z.me-colorMode")==="dark"){
-        x.classList.remove("bi-moon-fill");
-        x.classList.add("bi-brightness-high-fill");
+        colorModeIcon.classList.remove("bi-moon-fill");
+        colorModeIcon.classList.add("bi-brightness-high-fill");
 
-        x2.setAttribute('href', './img/logo_icon_dark.svg');
-        x3.setAttribute('src', './img/logo_light_bold.svg');
+        siteIcon.setAttribute('href', './img/logo_light_bold.svg');
+        navIcon.setAttribute('src', './img/logo_light_bold.svg');
 
-        x4.classList.remove("navbar-light");
-        x4.classList.add("navbar-dark");
+        navbar.classList.remove("navbar-light");
+        navbar.classList.add("navbar-dark");
     }else{
-        x.classList.remove("bi-brightness-high-fill");
-        x.classList.add("bi-moon-fill");
+        colorModeIcon.classList.remove("bi-brightness-high-fill");
+        colorModeIcon.classList.add("bi-moon-fill");
 
-        x2.setAttribute('href', './img/logo_icon_light.svg');
-        x3.setAttribute('src', './img/logo_dark_bold.svg');
+        siteIcon.setAttribute('href', './img/logo_dark_bold.svg');
+        navIcon.setAttribute('src', './img/logo_dark_bold.svg');
 
-        x4.classList.remove("navbar-dark");
-        x4.classList.add("navbar-light");
+        navbar.classList.remove("navbar-dark");
+        navbar.classList.add("navbar-light");
     }
 }
 
