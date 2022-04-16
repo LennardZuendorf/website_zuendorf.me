@@ -1,5 +1,5 @@
 
-![Logo](https://zuendorf.me/img/svg/logo_dark_bold)
+![Logo](https://zuendorf.me/img/svg/logo_light_bold.svg)
 
 
 # Personal Website
